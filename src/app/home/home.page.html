@@ -14,13 +14,13 @@
     <ion-card-content>
       <ion-list>
         <ion-item>
-          <ion-label>Platform name:</ion-label>
+          <ion-label>Platform name:{{ptfName}}</ion-label>
         </ion-item>
         <ion-item>
-          <ion-label>Native Platform:</ion-label>
+          <ion-label>Native Platform:{{ isNative }}</ion-label>
         </ion-item>
         <ion-item>
-          <ion-label>Camara available_</ion-label>
+          <ion-label>Camara available:{{isAvailable}}</ion-label>
         </ion-item>
       </ion-list>
     </ion-card-content>
@@ -32,22 +32,22 @@
     <ion-card-content>
       <ion-list>
         <ion-item>
-          <ion-label>Name:</ion-label>
+          <ion-label>Name:{{deviceInfo.name}}</ion-label>
         </ion-item>
         <ion-item>
-          <ion-label>Operating System:</ion-label>
+          <ion-label>Operating System:{{deviceInfo.operatingSystem}}</ion-label>
         </ion-item>
         <ion-item>
-          <ion-label>OS version:</ion-label>
+          <ion-label>OS version: {{deviceInfo.osSystem}}</ion-label>
         </ion-item>
         <ion-item>
-          <ion-label>Manufacture:</ion-label>
+          <ion-label>Manufacture: {{deviceInfo.manufacturer}}</ion-label>
         </ion-item>
         <ion-item>
-          <ion-label>Is Virtual?:</ion-label>
+          <ion-label>Is Virtual?:{{deviceInfo.isVirtual}}</ion-label>
         </ion-item>
         <ion-item>
-          <ion-label>UUID:</ion-label>
+          <ion-label>UUID:{{deviceId.uuid}}</ion-label>
         </ion-item>
       </ion-list>
     </ion-card-content>
@@ -59,10 +59,10 @@
     <ion-card-content>
       <ion-list>
         <ion-item>
-          <ion-label>Battery Level:</ion-label>
+          <ion-label>Battery Level: {{deviceBattery.batteryLevel}}</ion-label>
         </ion-item>
         <ion-item>
-          <ion-label>Is charging?:</ion-label>
+          <ion-label>Is charging?:{{deviceBattery.isCharging}}</ion-label>
         </ion-item>
       </ion-list>
     </ion-card-content>
