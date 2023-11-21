@@ -9,6 +9,18 @@
 <ion-content [fullscreen]="true">
   <ion-card>
     <ion-card-header>
+      <ion-card-title>Geolocalizacion info</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-list>
+        <ion-item>
+          <ion-label>Geolocalizacion:{{coordinates}}</ion-label>
+        </ion-item>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+  <ion-card>
+    <ion-card-header>
       <ion-card-title>Capacitor info</ion-card-title>
     </ion-card-header>
     <ion-card-content>
@@ -63,6 +75,36 @@
         </ion-item>
         <ion-item>
           <ion-label>Is charging?:{{deviceBattery.isCharging}}</ion-label>
+        </ion-item>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Network Info</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-list>
+        <ion-item>
+          <ion-label>Is connected?: {{networkStatus.connected}}</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-label>Connecting Type?:{{networkStatus.connectionType}}</ion-label>
+        </ion-item>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+    <ion-card>
+    <ion-card-header>
+      <ion-card-title>Events Log</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-list>
+        <ion-item>
+          <ion-label>{{appStateChangeS}}</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-label>Cambio tipo de conexion:{{networkStatusChange}}</ion-label>
         </ion-item>
       </ion-list>
     </ion-card-content>
